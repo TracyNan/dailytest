@@ -21,7 +21,7 @@ public class Robot {
         String regex = "https://[\\w+\\.?/?]+\\.[A-Za-z]+";// url匹配规则
         Pattern p = Pattern.compile(regex);
         try {
-            url = new URL("https://www.citi.com");// 爬取的网址、这里爬取的是一个生物网站
+            url = new URL("https://www.google.com");// 爬取的网址、这里爬取的是一个生物网站
             urlconn = url.openConnection();
             pw = new PrintWriter(new FileWriter("C:/git/dailytest/a.txt"), true);// 将爬取到的链接放到D盘的SiteURL文件中
             br = new BufferedReader(new InputStreamReader(
