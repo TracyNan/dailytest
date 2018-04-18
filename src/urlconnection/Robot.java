@@ -18,12 +18,12 @@ public class Robot {
         BufferedReader br = null;
         PrintWriter pw = null;
         // String regex = "http://[\\w+\\.?/?]+\\.[A-Za-z]+";
-        String regex = "https://[\\w+\\.?/?]+\\.[A-Za-z]+";// url匹配规则
+        String regex = "https://[\\w+\\.?/?]+\\.[A-Za-z]+";// url鍖归厤瑙勫垯
         Pattern p = Pattern.compile(regex);
         try {
-            url = new URL("https://www.google.com");// 爬取的网址、这里爬取的是一个生物网站
+            url = new URL("http://www.12306.cn/mormhweb/");// 鐖彇鐨勭綉鍧�銆佽繖閲岀埇鍙栫殑鏄竴涓敓鐗╃綉绔�
             urlconn = url.openConnection();
-            pw = new PrintWriter(new FileWriter("C:/git/dailytest/a.txt"), true);// 将爬取到的链接放到D盘的SiteURL文件中
+            pw = new PrintWriter(new FileWriter("D:a.txt"), true);// 灏嗙埇鍙栧埌鐨勯摼鎺ユ斁鍒癉鐩樼殑SiteURL鏂囦欢涓�
             br = new BufferedReader(new InputStreamReader(
                     urlconn.getInputStream()));
             String buf = null;
@@ -33,7 +33,7 @@ public class Robot {
                     pw.println(buf_m.group());
                 }
             }
-            System.out.println("爬取成功^_^");
+            System.out.println("鐖彇鎴愬姛^_^");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
