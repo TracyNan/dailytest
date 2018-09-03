@@ -8,9 +8,17 @@ import java.util.Map.Entry;
 
 public class ListTest {
 			
-	//comments:Map 的key只能是 引用数据类型 ，
-	//Map是通过比较 key的hashcode值put值 的 ，所以不能为基本数据类型
-	
+	//comments:Map çš„keyå�ªèƒ½æ˜¯ å¼•ç”¨æ•°æ�®ç±»åž‹ ï¼Œ
+	//Mapæ˜¯é€šè¿‡æ¯”è¾ƒ keyçš„hashcodeå€¼putå€¼ çš„ ï¼Œæ‰€ä»¥ä¸�èƒ½ä¸ºåŸºæœ¬æ•°æ�®ç±»åž‹
+	private String teString;
+	public String getTeString() {
+		return teString;
+	}
+
+	public void setTeString(String teString) {
+		this.teString = teString;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Map<Integer, List<String>> nameMap = new HashMap<>();
