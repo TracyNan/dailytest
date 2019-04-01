@@ -24,3 +24,4 @@ eclipse plugin:
 4.Enhanced Class Decompiler
 5.Eclipse Java EE Developer Tools
 6.Spring Tools
+7.generatorConfig
