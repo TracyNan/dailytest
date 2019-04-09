@@ -25,3 +25,6 @@ eclipse plugin:
 5.Eclipse Java EE Developer Tools
 6.Spring Tools
 7.generatorConfig
+
+
+-Front Angular
